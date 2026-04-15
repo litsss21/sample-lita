@@ -1,0 +1,16 @@
+<?php
+
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
+
+Route::get('/user', function (Request $request) {
+    return $request->user();
+})->middleware('auth:sanctum');
+
+route::get("user", function (){});
+
+routes:: get("/sample", function(){
+    return response()->json([
+        "message" => "This is a sample API endpoint"
+    ]);
+    }); 
